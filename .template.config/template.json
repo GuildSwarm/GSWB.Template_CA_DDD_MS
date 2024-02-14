@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Eduardo Yago Vicent",
+  "classifications": [ "Microservice", "DDD", "CA", "API" ],
+  "identity": "CA_DDD_MS",
+  "name": "CA DDD Microservice",
+  "shortName": "ca-ddd-ms",
+  "description": "A template for a Microservice solution API following CleanArchitecture(CA) and DomainDirvenDesign(DDD).",
+  "sourceName": "CA_DDD_MS_Template",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "symbols": {
+    "Empty": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Empty",
+      "description": "Creates empty .editorconfig instead of the defaults for .NET."
+    }
+  },
+  "preferNameDirectory": true
+}
