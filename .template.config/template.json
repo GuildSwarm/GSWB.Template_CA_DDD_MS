@@ -11,14 +11,34 @@
     "language": "C#",
     "type": "solution"
   },
-  "symbols": {
-    "Empty": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "false",
-      "displayName": "Empty",
-      "description": "Creates empty .editorconfig instead of the defaults for .NET."
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ ".vs/**", ".git/**", ".gitattributes", ".gitignore", "README.md", "clean_install.sh" ]
+        }
+      ]
     }
-  },
-  "preferNameDirectory": true
+  ],
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0"
+        },
+        {
+          "choice": "net7.0"
+        },
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "replaces": "{TargetFramework}",
+      "defaultValue": "net8.0"
+    }
+  }
 }
