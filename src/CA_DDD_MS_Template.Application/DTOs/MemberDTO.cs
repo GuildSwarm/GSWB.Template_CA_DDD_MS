@@ -1,6 +1,6 @@
-﻿using CA_DDD_MS_Template.Domain.ValueObjects;
+﻿using Template_CA_DDD_MS.Domain.ValueObjects;
 
-namespace CA_DDD_MS_Template.Application.DTOs
+namespace Template_CA_DDD_MS.Application.DTOs
 {
     public record MemberDTO(string Description, MemberType Type);
 }

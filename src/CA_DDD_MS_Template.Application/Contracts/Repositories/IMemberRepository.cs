@@ -1,7 +1,7 @@
-﻿using CA_DDD_MS_Template.Domain.Entities;
+﻿using Template_CA_DDD_MS.Domain.Entities;
 using TGF.Common.ROP.HttpResult;
 
-namespace CA_DDD_MS_Template.Application.Contracts.Repositories
+namespace Template_CA_DDD_MS.Application.Contracts.Repositories
 {
     /// <summary>
     /// Provides an interface for repository operations related to the <see cref="Member"/> entity.

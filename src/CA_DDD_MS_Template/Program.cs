@@ -1,21 +1,21 @@
-using CA_DDD_MS_Template.API;
-using CA_DDD_MS_Template.Application;
-using CA_DDD_MS_Template.Domain;
-using CA_DDD_MS_Template.Infrastructure;
+using Template_CA_DDD_MS.API;
+using Template_CA_DDD_MS.Application;
+using Template_CA_DDD_MS.Domain;
+using Template_CA_DDD_MS.Infrastructure;
 using Common.Presentation;
 
 
-WebApplicationBuilder lCA_DDD_MS_TemplateApplicationBuilder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder lTemplate_CA_DDD_MSApplicationBuilder = WebApplication.CreateBuilder(args);
 
-await lCA_DDD_MS_TemplateApplicationBuilder.ConfigureInfrastructureAsync();
-lCA_DDD_MS_TemplateApplicationBuilder.Services.RegisterDomainServices();
-lCA_DDD_MS_TemplateApplicationBuilder.Services.RegisterApplicationServices();
-lCA_DDD_MS_TemplateApplicationBuilder.ConfigureCommonPresentation();
-lCA_DDD_MS_TemplateApplicationBuilder.ConfigurePresentation();
+await lTemplate_CA_DDD_MSApplicationBuilder.ConfigureInfrastructureAsync();
+lTemplate_CA_DDD_MSApplicationBuilder.Services.RegisterDomainServices();
+lTemplate_CA_DDD_MSApplicationBuilder.Services.RegisterApplicationServices();
+lTemplate_CA_DDD_MSApplicationBuilder.ConfigureCommonPresentation();
+lTemplate_CA_DDD_MSApplicationBuilder.ConfigurePresentation();
 
-var lCA_DDD_MS_TemplateApplication = lCA_DDD_MS_TemplateApplicationBuilder.Build();
+var lTemplate_CA_DDD_MSApplication = lTemplate_CA_DDD_MSApplicationBuilder.Build();
 
-await lCA_DDD_MS_TemplateApplication.UseInfrastructure();
-lCA_DDD_MS_TemplateApplication.UsePresentation();
+await lTemplate_CA_DDD_MSApplication.UseInfrastructure();
+lTemplate_CA_DDD_MSApplication.UsePresentation();
 
-await lCA_DDD_MS_TemplateApplication.RunAsync();
+await lTemplate_CA_DDD_MSApplication.RunAsync();

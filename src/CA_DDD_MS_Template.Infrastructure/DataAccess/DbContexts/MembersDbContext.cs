@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CA_DDD_MS_Template.Domain.Entities;
+using Template_CA_DDD_MS.Domain.Entities;
 
-namespace CA_DDD_MS_Template.Infrastructure.DataAccess.DbContexts
+namespace Template_CA_DDD_MS.Infrastructure.DataAccess.DbContexts
 {
     public class MembersDbContext(DbContextOptions<MembersDbContext> aOptions) : DbContext(aOptions)
     {

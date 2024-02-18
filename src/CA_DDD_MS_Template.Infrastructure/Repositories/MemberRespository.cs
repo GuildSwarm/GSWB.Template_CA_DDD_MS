@@ -1,12 +1,12 @@
-﻿using CA_DDD_MS_Template.Application.Contracts.Repositories;
-using CA_DDD_MS_Template.Domain.Entities;
-using CA_DDD_MS_Template.Infrastructure.DataAccess.DbContexts;
+﻿using Template_CA_DDD_MS.Application.Contracts.Repositories;
+using Template_CA_DDD_MS.Domain.Entities;
+using Template_CA_DDD_MS.Infrastructure.DataAccess.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TGF.CA.Infrastructure.DB.Repository;
 using TGF.Common.ROP.HttpResult;
 
-namespace CA_DDD_MS_Template.Infrastructure.Repositories
+namespace Template_CA_DDD_MS.Infrastructure.Repositories
 {
     public class MemberRepository(MembersDbContext aContext, ILogger<MemberRepository> aLogger)
         : RepositoryBase<MemberRepository, MembersDbContext>(aContext, aLogger), IMemberRepository, ISortRepository

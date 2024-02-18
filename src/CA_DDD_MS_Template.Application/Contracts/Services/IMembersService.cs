@@ -1,7 +1,7 @@
-﻿using CA_DDD_MS_Template.Application.DTOs;
+﻿using Template_CA_DDD_MS.Application.DTOs;
 using TGF.Common.ROP.HttpResult;
 
-namespace CA_DDD_MS_Template.Application.Contracts.Services
+namespace Template_CA_DDD_MS.Application.Contracts.Services
 {
     public interface IMembersService
     {

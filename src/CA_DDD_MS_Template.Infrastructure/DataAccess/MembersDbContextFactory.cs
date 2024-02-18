@@ -1,7 +1,7 @@
-﻿using CA_DDD_MS_Template.Infrastructure.DataAccess.DbContexts;
+﻿using Template_CA_DDD_MS.Infrastructure.DataAccess.DbContexts;
 using TGF.CA.Infrastructure.DB.PostgreSQL;
 
-namespace CA_DDD_MS_Template.Infrastructure.DataAccess
+namespace Template_CA_DDD_MS.Infrastructure.DataAccess
 {
     //USE: dotnet ef migrations add InitialCreate in PowerShell to create an initial migration.
 

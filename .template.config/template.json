@@ -6,7 +6,7 @@
   "name": "CA DDD Microservice",
   "shortName": "ca-ddd-ms",
   "description": "A template for a Microservice solution API following CleanArchitecture(CA) and DomainDirvenDesign(DDD).",
-  "sourceName": "CA_DDD_MS_Template",
+  "sourceName": "Template_CA_DDD_MS",
   "tags": {
     "language": "C#",
     "type": "solution"

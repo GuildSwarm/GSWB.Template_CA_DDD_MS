@@ -1,10 +1,10 @@
-﻿using CA_DDD_MS_Template.Application.DTOs;
-using CA_DDD_MS_Template.Domain.Entities;
+﻿using Template_CA_DDD_MS.Application.DTOs;
+using Template_CA_DDD_MS.Domain.Entities;
 using Common.Domain.ValueObjects;
 using System.Data;
 
 
-namespace CA_DDD_MS_Template.Application.Mappings
+namespace Template_CA_DDD_MS.Application.Mappings
 {
     public static class MemberMapping
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 
-namespace CA_DDD_MS_Template.Infrastructure
+namespace Template_CA_DDD_MS.Infrastructure
 {
     /// <summary>
     /// Provides methods for configuring and using the infrastructure layer specific services.

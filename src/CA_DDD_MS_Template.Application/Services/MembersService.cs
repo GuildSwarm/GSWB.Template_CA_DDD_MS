@@ -1,11 +1,11 @@
-﻿using CA_DDD_MS_Template.Application.Contracts.Repositories;
-using CA_DDD_MS_Template.Application.Contracts.Services;
-using CA_DDD_MS_Template.Application.DTOs;
-using CA_DDD_MS_Template.Application.Mappings;
-using CA_DDD_MS_Template.Domain.Entities;
+﻿using Template_CA_DDD_MS.Application.Contracts.Repositories;
+using Template_CA_DDD_MS.Application.Contracts.Services;
+using Template_CA_DDD_MS.Application.DTOs;
+using Template_CA_DDD_MS.Application.Mappings;
+using Template_CA_DDD_MS.Domain.Entities;
 using TGF.Common.ROP.HttpResult;
 
-namespace CA_DDD_MS_Template.Application.Services
+namespace Template_CA_DDD_MS.Application.Services
 {
     public class MembersService : IMembersService
     {

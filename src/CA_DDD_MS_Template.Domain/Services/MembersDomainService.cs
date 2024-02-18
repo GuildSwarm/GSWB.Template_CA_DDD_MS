@@ -1,11 +1,11 @@
-﻿using CA_DDD_MS_Template.Domain.Contracts.Services;
-using CA_DDD_MS_Template.Domain.Entities;
-using CA_DDD_MS_Template.Domain.Errors;
+﻿using Template_CA_DDD_MS.Domain.Contracts.Services;
+using Template_CA_DDD_MS.Domain.Entities;
+using Template_CA_DDD_MS.Domain.Errors;
 using TGF.Common.ROP;
 using TGF.Common.ROP.HttpResult;
 using TGF.Common.ROP.Result;
 
-namespace CA_DDD_MS_Template.Domain.Services
+namespace Template_CA_DDD_MS.Domain.Services
 {
     /// <summary>
     /// Domain service with complex business logic, in this case related with the Member entitiy.

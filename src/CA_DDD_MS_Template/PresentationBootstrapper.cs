@@ -7,7 +7,7 @@ using TGF.CA.Presentation.Middleware;
 using TGF.CA.Presentation.MinimalAPI;
 using TGF.CA.Presentation;
 
-namespace CA_DDD_MS_Template.API
+namespace Template_CA_DDD_MS.API
 {
     /// <summary>
     /// Provides methods for configuring and using the presentation layer specific services.

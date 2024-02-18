@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(DockerBuild)'=='false'">
-    <ProjectReference Include="..\CA_DDD_MS_Template.Application\CA_DDD_MS_Template.Application.csproj" />
-    <ProjectReference Include="..\CA_DDD_MS_Template.Domain\CA_DDD_MS_Template.Domain.csproj" />
+    <ProjectReference Include="..\CA_DDD_MS_Template.Application\Template_CA_DDD_MS.Application.csproj" />
+    <ProjectReference Include="..\CA_DDD_MS_Template.Domain\Template_CA_DDD_MS.Domain.csproj" />
     <ProjectReference Include="..\..\..\TheGoodFramework\src\CleanArchitecture\Infrastructure\Comm\TGF.CA.Infrastructure.Comm.RabbitMQ\TGF.CA.Infrastructure.Comm.RabbitMQ.csproj" />
     <ProjectReference Include="..\..\..\TheGoodFramework\src\Common\TGF.Common.Extensions\TGF.Common.Extensions.csproj" />
     <ProjectReference Include="..\..\..\GSWB.Common\src\Common.Infrastructure\Common.Infrastructure.csproj" />

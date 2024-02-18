@@ -1,8 +1,8 @@
-﻿using CA_DDD_MS_Template.Domain.Entities;
-using CA_DDD_MS_Template.Domain.Errors;
+﻿using Template_CA_DDD_MS.Domain.Entities;
+using Template_CA_DDD_MS.Domain.Errors;
 using FluentValidation;
 
-namespace CA_DDD_MS_Template.Domain.Validation
+namespace Template_CA_DDD_MS.Domain.Validation
 {
     public class MemberNameLengthValidator : AbstractValidator<Member>
     {

@@ -1,5 +1,5 @@
-﻿using CA_DDD_MS_Template.Application.Contracts.Services;
-using CA_DDD_MS_Template.Application.DTOs;
+﻿using Template_CA_DDD_MS.Application.Contracts.Services;
+using Template_CA_DDD_MS.Application.DTOs;
 using Common.Application.Contracts.ApiRoutes;
 using Common.Domain.ValueObjects;
 using Common.Presentation.Validation;
@@ -11,7 +11,7 @@ using TGF.CA.Presentation.MinimalAPI;
 using TGF.Common.ROP.HttpResult;
 using TGF.Common.ROP.Result;
 
-namespace CA_DDD_MS_Template.API.Endpoints
+namespace Template_CA_DDD_MS.API.Endpoints
 {
     /// Collection of endpoints to run over the whole guild's member list.
     public class MembersEndpoints : IEndpointDefinition

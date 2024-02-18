@@ -1,5 +1,5 @@
 ﻿
-namespace CA_DDD_MS_Template.Domain.Errors
+namespace Template_CA_DDD_MS.Domain.Errors
 {
     public static partial class DomainErrors
     {

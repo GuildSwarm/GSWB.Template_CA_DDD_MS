@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace CA_DDD_MS_Template.Application
+namespace Template_CA_DDD_MS.Application
 {
     /// <summary>
     /// Provides methods for configuring and using the application layer specific services.

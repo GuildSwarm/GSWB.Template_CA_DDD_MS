@@ -1,6 +1,6 @@
-@CA_DDD_MS_Template_HostAddress = http://localhost:5116
+@Template_CA_DDD_MS_HostAddress = http://localhost:5116
 
-GET {{CA_DDD_MS_Template_HostAddress}}/weatherforecast/
+GET {{Template_CA_DDD_MS_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

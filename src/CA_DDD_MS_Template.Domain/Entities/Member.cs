@@ -1,8 +1,8 @@
-﻿using CA_DDD_MS_Template.Domain.ValueObjects;
+﻿using Template_CA_DDD_MS.Domain.ValueObjects;
 using System.ComponentModel.DataAnnotations;
 using TGF.CA.Domain.Primitives;
 
-namespace CA_DDD_MS_Template.Domain.Entities
+namespace Template_CA_DDD_MS.Domain.Entities
 {
     //Entity class file should contain only properties and fields, business logic should be place in aonther partial class file withing the same domain.
     public partial class Member : Entity<Guid>

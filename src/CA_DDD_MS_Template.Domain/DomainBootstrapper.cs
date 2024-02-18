@@ -1,8 +1,8 @@
-﻿using CA_DDD_MS_Template.Domain.Contracts.Services;
-using CA_DDD_MS_Template.Domain.Services;
+﻿using Template_CA_DDD_MS.Domain.Contracts.Services;
+using Template_CA_DDD_MS.Domain.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CA_DDD_MS_Template.Domain
+namespace Template_CA_DDD_MS.Domain
 {
     /// <summary>
     /// Provides methods for configuring and using the domain layer specific services.

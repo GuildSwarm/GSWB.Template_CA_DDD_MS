@@ -8,20 +8,20 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/CA_DDD_MS_Template/CA_DDD_MS_Template.API.csproj", "src/CA_DDD_MS_Template/"]
-COPY ["src/CA_DDD_MS_Template.Infrastructure/CA_DDD_MS_Template.Infrastructure.csproj", "src/CA_DDD_MS_Template.Infrastructure/"]
-COPY ["src/CA_DDD_MS_Template.Application/CA_DDD_MS_Template.Application.csproj", "src/CA_DDD_MS_Template.Application/"]
-COPY ["src/CA_DDD_MS_Template.Domain/CA_DDD_MS_Template.Domain.csproj", "src/CA_DDD_MS_Template.Domain/"]
-RUN dotnet restore "./src/CA_DDD_MS_Template/./CA_DDD_MS_Template.API.csproj"
+COPY ["src/Template_CA_DDD_MS/Template_CA_DDD_MS.API.csproj", "src/Template_CA_DDD_MS/"]
+COPY ["src/Template_CA_DDD_MS.Infrastructure/Template_CA_DDD_MS.Infrastructure.csproj", "src/Template_CA_DDD_MS.Infrastructure/"]
+COPY ["src/Template_CA_DDD_MS.Application/Template_CA_DDD_MS.Application.csproj", "src/Template_CA_DDD_MS.Application/"]
+COPY ["src/Template_CA_DDD_MS.Domain/Template_CA_DDD_MS.Domain.csproj", "src/Template_CA_DDD_MS.Domain/"]
+RUN dotnet restore "./src/Template_CA_DDD_MS/./Template_CA_DDD_MS.API.csproj"
 COPY . .
-WORKDIR "/src/src/CA_DDD_MS_Template"
-RUN dotnet build "./CA_DDD_MS_Template.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/src/Template_CA_DDD_MS"
+RUN dotnet build "./Template_CA_DDD_MS.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./CA_DDD_MS_Template.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Template_CA_DDD_MS.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "CA_DDD_MS_Template.API.dll"]
+ENTRYPOINT ["dotnet", "Template_CA_DDD_MS.API.dll"]
